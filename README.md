@@ -131,6 +131,7 @@ npm run dev
 # Aplicação em: http://localhost:3000
 
 👥 Autores
+
 Trabalho desenvolvido por:
 Eduarda Alves Pinho - N°08
 Isabela Alves - N°15
