@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  color: #566362;
+  background: linear-gradient(to right, #c39993 0%, #e9d8d4 40%, #f7f3f2 100%);
+  background-attachment: fixed;
+}
+
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.notfound-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: transparent; 
+}
+
+.illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 1.8rem;             
+  margin-bottom: 2rem;
+}
+
+.num {
+  font-size: clamp(10rem, 25vw, 18rem);
+  color: #6a8a82;
+  font-weight: 800;
+  line-height: 1;
+  display: flex;
+  align-items: center;  
+}
+
+.bunny-zero {
+  position: relative;
+  width: clamp(7rem, 18vw, 12rem);
+  height: clamp(10rem, 22vw, 12rem);
+  background-color: #6a8a82;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+  top: 58px; 
+}
+
+.inner-hole {
+  position: relative;
+  width: 50%;     
+  height: 50%;
+  background-color: #f4f3f2;
+  border-radius: 50%;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ear {
+  position: absolute;
+  width: 28%;
+  height: 50%;
+  background-color: #6a8a82;
+  border-radius: 50% 50% 0 0;
+  top: -35%;
+}
+
+.ear.left {
+  left: 18%;
+  transform: rotate(-10deg);
+}
+
+.ear.right {
+  right: 18%;
+  transform: rotate(10deg);
+}
+
+.ear::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background-color: #f9ddd7;
+  top: 15%;
+  left: 20%;
+  border-radius: 50% 50% 0 0;
+}
+
+.eyes {
+  position: absolute;
+  top: 25%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  left: 20%;
+}
+
+.eye {
+  width: 20%;
+  height: 20%;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: #333;
+  border-radius: 50%;
+  top: 30%;
+  left: 30%;
+}
+
+.nose {
+  position: absolute;
+  bottom: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14%;
+  height: 10%;
+  background-color: #c58b7c;
+  border-radius: 50%;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 10%;
+  border-bottom: 3px solid #6a8a82;
+  border-radius: 0 0 50% 50%;
+}
+
+.text {
+  font-size: 1.3rem;
+  margin-top: 2.5rem;  
+  margin-bottom: 1.8rem;
+  color: #566362;
+  max-width: 600px;
+}
+
+button {
+  padding: 0.9rem 2.2rem;
+  background-color: #6a8a82;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: 'Playfair Display', serif;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-top: 0.5rem; 
+}
+
+button:hover {
+  background-color: #55726a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .illustration {
+    gap: 1rem;
+  }
+
+  .num {
+    font-size: 7.5rem; 
+  }
+
+  .bunny-zero {
+    width: 6rem;     
+    height: 6rem;
+    top: 20px;       
+  }
+
+  .ear {
+    width: 25%;
+    height: 35%;
+    top: -25%;
+  }
+
+  .inner-hole {
+    width: 50%;
+    height: 50%;
+  }
+
+  .text {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  button {
+    width: auto;
+    font-size: 0.95rem;
+    padding: 0.8rem 1.6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .num {
+    font-size: 6.5rem;   
+  }
+
+  .bunny-zero {
+    width: 5rem;
+    height: 5rem;
+    top: 15px;         
+  }
+
+  button {
+    width: auto;
+    font-size: 0.95rem;
+    padding: 0.8rem 1.6rem;
+    margin-top: 0.5rem;
+  }
+}

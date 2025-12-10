@@ -1,0 +1,379 @@
+.cardsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 27px;
+}
+
+.cardFluxo {
+  display: flex;
+  align-items: stretch;
+  width: 275px;
+  height: 115px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cardFluxo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.ladoVerde {
+  background-color: #8FAAA3;
+  width: 70px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.tituloCard {
+  font-size: 0.8rem;
+  font-weight: 600;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.ladoBranco {
+  flex: 1;
+  background-color: #f4f3f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.valor {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.total {
+  font-size: 0.85rem;
+  color: #8FAAA3;
+   font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cardFluxo {
+    width: 90%;
+  }
+}
+
+.container {
+  font-family: 'Clear Sans', sans-serif;
+  width: 90%;
+  margin: 20px auto;
+  color: #333;
+}
+
+/* --- Título --- */
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.titulo-verde {
+  color: #8FAAA3;
+  font-weight: 600;
+}
+
+/* --- Cards --- */
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.cardFluxo {
+  display: flex;
+  flex: 1;
+  min-width: 230px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ladoVerde {
+  background-color: #8FAAA3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 10px;
+}
+
+.ladoBranco {
+  background-color: #f9f9f9;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.valor {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.total {
+  color: #8FAAA3;
+}
+
+/* --- Gráfico --- */
+.graficoContainer {
+  background: #f8f8f8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.graficoHeader {
+  background-color: #8FAAA3;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.graficoCorpo {
+  padding: 20px;
+  text-align: center;
+}
+
+.graficoSVG {
+  width: 100%;
+  height: auto;
+}
+
+.eixoX {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.graficoRodape {
+  border-top: 1px solid #ccc;
+  padding: 10px 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+/* CARD DE RELATÓRIO */
+.card-relatorio {
+  background-color: #8FAAA3;
+  border-radius: 40px;
+  padding: 25px;
+  color: white;
+font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+}
+
+.cabecalho-relatorio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.titulo-relatorio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-relatorio h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tituloRelatorio{
+    font-weight: 600;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icone-ajuda {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.icone-ajuda:hover {
+  color: #dbe7e3;
+}
+
+.inputs-relatorio {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.btnBaixar{
+    display: inline-block;
+     padding: 0.6rem 3rem;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8FAAA3;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    
+   }
+   
+   .btnBaixar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D4DEDB;
+   border: 1px solid  #D4DEDB;
+    transform: translateX(-100%);
+    transition: all .5s;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;
+
+   }
+   
+   .btnBaixar:hover::before {
+    transform: translateX(0);
+   }
+
+/* --- MODAL --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  backdrop-filter: blur(4px);
+}
+
+.modal-conteudo {
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px 30px;
+  width: 95%;
+  max-width: 460px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #2e6558;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2b3d38;
+}
+
+.icone-modal {
+  color: #4a776b;
+}
+
+.modal-conteudo p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 15px 0 25px;
+}
+
+.btn-fechar {
+  background: #4a776b;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-fechar:hover {
+  background: #385e53;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.textoPequenoCinza {
+  font-size: 0.70rem;
+  color: #88888894;
+  
+}
+
+
+
+.total {
+  font-size: 1rem;
+  color: #8FAAA3;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.textoMiniCinza {
+  font-size: 0.65rem;
+  color: #aaaaaaad;
+  margin-top: 2px;
+}

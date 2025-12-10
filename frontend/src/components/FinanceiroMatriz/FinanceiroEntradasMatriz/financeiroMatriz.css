@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Clear+Sans&family=Montserrat:wght@600&display=swap');
+
+.container {
+  font-family: 'Clear Sans', sans-serif;
+  margin: 20px auto;
+  width: 90%;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* --- TÍTULO --- */
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.titulo-preto {
+  color: #2e4d49;
+}
+
+.titulo-preto1 {
+  color: #566363
+}
+
+.iconeTitulo {
+  color: #2e4d49;
+  margin-right: 4px;
+}
+
+/* --- FILTROS --- */
+.filtros {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 230px;
+  border-radius: 25px;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* --- LABEL --- */
+.resultado-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #443f3f;
+}
+
+/* --- TABELA DESKTOP --- */
+.tabelaContainer {
+  background-color: #f7f9f8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  overflow: hidden;
+}
+
+.subtituloMatriz {
+  text-align: center;
+  background-color: #566363;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  padding: 12px 0;
+  margin: 0;
+}
+
+.tabelaMatriz {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.tabelaMatriz th {
+  background-color: #5663633c;
+  padding: 12px 10px;
+  color: #222;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.tabelaMatriz td {
+  padding: 10px 12px;
+  border-top: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+.tabelaMatriz tr:nth-child(even) {
+  background-color: #f2f6f5;
+}
+
+/* --- ÍCONES --- */
+.acoesMatriz {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.iconeMatriz {
+  color: #566363;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.iconeMatriz:hover {
+  transform: scale(1.15);
+  color: #191f1d;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* tablets */
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}
+
+/* MOBILE: */
+@media (max-width: 600px) {
+  .tabelaContainer {
+    background: none;
+    box-shadow: none;
+  }
+
+  .subtitulo {
+    background: none;
+    color: #2e4d49;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .tabela {
+    display: none; 
+  }
+  
+  .linha-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+
+  .linha-info strong {
+    color: #2e4d49;
+    font-weight: 600;
+  }
+
+  .acoes {
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .icone {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+   .titulofinanceiro{
+     font-family: 'Montserrat', sans-serif;
+     margin-bottom: 10px;
+   }
+   
+   .tituloinput{
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+   }
+
+/* --- MODO MOBILE --- */
+.cardsMobile {
+  display: none; 
+}
+
+@media (max-width: 600px) {
+  .tabelaContainer {
+    display: none; 
+  }
+
+  .cardsMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .cardFinanceiro {
+    background-color: #f8faf9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    border-left: 5px solid #8faaa3;
+  }
+
+  .linha-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+    color: #3a3a3a;
+  }
+
+  .linha-info strong {
+    color: #2e4d49;
+    font-weight: 600;
+  }
+
+  .acoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .icone {
+    color: #8faaa3;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .icone:hover {
+    transform: scale(1.15);
+    color: #6d8982;
+  }
+}
+
+
+.btnFiltrarMatriz {
+  display: inline-block;
+  padding: 0.6rem 3rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border: 1px solid #8FAAA3;
+  cursor: pointer;
+  position: relative;
+  background-color: #566363;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btnFiltrarMatriz::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5b57;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.btnFiltrarMatriz:hover::before {
+  transform: translateX(0);
+}

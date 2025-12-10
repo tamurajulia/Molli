@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Clear+Sans&family=Montserrat:wght@600&display=swap');
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.cadastro-container {
+  background-color: #f8faf9;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 950px;
+  margin: 40px auto;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== TÍTULO ===== */
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.titulo-preto {
+  color: #222;
+  font-weight: 600;
+}
+
+.titulo-verde {
+  color: #566363;
+  font-weight: 700;
+}
+
+.iconeTitulo {
+  color: #566363;
+}
+
+/* ===== FORM ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* ===== SEÇÕES ===== */
+.secao {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.secao h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #566363;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ===== CAMPOS ===== */
+.campo1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo1 label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* ===== INPUTS E SELECTS ===== */
+.inputIcone {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcone input,
+.inputIcone select {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border: 1.8px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  color: #333;
+  appearance: none; /* remove seta padrão */
+}
+
+/* ÍCONE À DIREITA */
+.icone-input {
+  position: absolute;
+  right: 12px;
+  color: #566363;
+}
+
+
+
+/* ===== LINHAS ===== */
+.linha {
+  display: flex;
+  gap: 20px;
+}
+
+.tres-colunas > .campo {
+  flex: 1 1 calc(33.33% - 10px);
+}
+
+.duas-colunas > .campo {
+  flex: 1 1 calc(50% - 10px);
+}
+
+/* ===== BOTÃO E RODAPÉ ===== */
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #566363;
+}
+
+.botao-criar {
+  background-color:#566363;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao-criar:hover {
+  background-color: #2f3535;
+}
+
+.BtnVoltar {
+  color: #566363;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}

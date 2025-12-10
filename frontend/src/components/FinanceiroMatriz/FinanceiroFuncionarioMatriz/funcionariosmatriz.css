@@ -1,0 +1,19 @@
+.subtitulo {
+  text-align: center;
+  background-color: #566363;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  padding: 12px 0px 8px 0px;
+  margin: 0;
+
+  border: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.titulofinanceiro {
+  margin-bottom: 18px !important;
+}

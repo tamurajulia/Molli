@@ -1,0 +1,150 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-height: 100vh; 
+    background-color: #d8bcb4;
+    color: white;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    overflow-y: auto;
+    border-radius: 0;
+    box-sizing: border-box; 
+    z-index: 1000;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    opacity: 0.95;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  .menu-item:hover {
+    opacity: 0.8;
+  }
+  
+  .menu-item i {
+    font-size: 20px;
+  }
+  
+  .bottom-section {
+    margin-top: auto;
+  }
+  
+  .user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .user-box.collapsed {
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 54px; 
+    min-width: 54px;
+  }
+  
+  .user-box.collapsed .user-info {
+    display: none;
+  }
+  
+  .avatar i {
+    font-size: 28px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .user-role {
+    font-size: 12px;
+    margin: 0;
+    color: #f0e5e2;
+  }
+  
+  .sidebar.closed {
+    width: 70px;
+  }
+  
+@media (max-width: 768px) {
+    .sidebar {
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+    }
+  
+    .sidebar.open {
+      width: 240px;
+    }
+  
+    .menu-item span {
+      display: none;
+    }
+  
+    .sidebar.open .menu-item span {
+      display: inline;
+    }
+  
+    .logo {
+      width: 200px; 
+    }
+  
+    .bottom-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+  
+    .user-box {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .avatar i {
+      font-size: 32px; 
+    }
+  
+  }

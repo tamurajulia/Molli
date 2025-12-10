@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Container Principal - Ocupa a tela toda e tem o background */
+.forbidden-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante altura total */
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to right, #c39993, #f9f7f6);
+  overflow-x: hidden;
+}
+
+/* Conteúdo centralizado */
+.forbidden-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* O container da animação 403 */
+.illustration-403 {
+  display: flex;
+  align-items: flex-end; /* Alinha os números e a porta na base */
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Números gigantes */
+.num {
+  font-size: clamp(8rem, 20vw, 14rem);
+  color: #6a8a82;
+  font-weight: 800;
+  line-height: 0.8; /* Ajuste para alinhar melhor com a porta */
+  user-select: none;
+}
+
+/* A Porta */
+.door {
+  position: relative;
+  width: clamp(5rem, 12vw, 8rem);
+  height: clamp(8rem, 18vw, 12rem);
+  border: 3px solid #6a8a82;
+  border-radius: 50% 50% 0 0; /* Faz o arco da porta */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Sutil fundo na porta */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Corta as fitas que passarem da borda */
+}
+
+/* Fitas de "Interditado" */
+.door-tape {
+  position: absolute;
+  width: 140%; /* Mais largo para cobrir a rotação */
+  height: 0.5rem;
+  background-color: #6a8a82;
+  left: -20%;
+  opacity: 0.85;
+}
+
+.tape1 {
+  transform: rotate(25deg);
+  top: 30%;
+}
+.tape2 {
+  transform: rotate(-20deg);
+  top: 50%;
+}
+.tape3 {
+  transform: rotate(15deg);
+  top: 75%;
+}
+
+/* Maçaneta */
+.handle {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #6a8a82;
+  border-radius: 50%;
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto explicativo */
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #566362;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* Botão - Estilizado especificamente dentro do forbidden-content */
+.forbidden-content button {
+  padding: 0.9rem 2rem;
+  background-color: #6a8a82;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.forbidden-content button:hover {
+  background-color: #55726a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .num {
+    font-size: clamp(6rem, 25vw, 9rem);
+  }
+
+  .door {
+    width: clamp(4rem, 15vw, 6rem);
+    height: clamp(6rem, 22vw, 9rem);
+  }
+
+  .illustration-403 {
+    gap: 0.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .forbidden-content button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

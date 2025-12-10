@@ -1,0 +1,180 @@
+body {
+  overflow-x: hidden;
+}
+
+.chartsGrid,
+.chartSection,
+.tabela-pagamentos {
+  overflow: visible !important;
+}
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.chartSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border-top: 6px solid #566363;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chartSection h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #566363;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filtroLoja {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-top: 6px solid #566363;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #566363;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filtroLoja select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #566363;
+  color: #566363;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.chartSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border-top: 6px solid #566363;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabela-pagamentos {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  color: #566363;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  table-layout: auto;
+}
+
+.tabela-pagamentos th,
+.tabela-pagamentos td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e0f2f1;
+  text-align: left;
+  vertical-align: middle;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.tabela-pagamentos th {
+  background-color:#56636352;
+  color: #566363;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.tabela-pagamentos td {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tabela-pagamentos .pago {
+  color: #566363;
+  font-weight: 600;
+}
+
+.tabela-pagamentos .pendente {
+  color: #90bebb;
+  font-weight: 600;
+}
+
+.tabela-pagamentos .atrasado {
+  color: #8faaa3;
+  font-weight: 600;
+}
+
+.tabela-pagamentos tr:hover {
+  background-color: #f3fbf9;
+  transition: 0.2s ease;
+}
+
+.tabela-pagamentos th:nth-child(1),
+.tabela-pagamentos td:nth-child(1) {
+  width: 40%;
+}
+
+.tabela-pagamentos th:nth-child(2),
+.tabela-pagamentos td:nth-child(2) {
+  width: 20%;
+}
+
+.tabela-pagamentos th:nth-child(3),
+.tabela-pagamentos td:nth-child(3) {
+  width: 20%;
+}
+
+.tabela-pagamentos th:nth-child(4),
+.tabela-pagamentos td:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .tabela-pagamentos th,
+  .tabela-pagamentos td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .tabela-pagamentos th:nth-child(1),
+  .tabela-pagamentos td:nth-child(1) {
+    width: 45%;
+  }
+
+  .tabela-pagamentos th:nth-child(2),
+  .tabela-pagamentos td:nth-child(2) {
+    width: 20%;
+  }
+
+  .tabela-pagamentos th:nth-child(3),
+  .tabela-pagamentos td:nth-child(3) {
+    width: 20%;
+  }
+
+  .tabela-pagamentos th:nth-child(4),
+  .tabela-pagamentos td:nth-child(4) {
+    width: 15%;
+  }
+
+  .chartSection {
+    padding: 15px;
+  }
+
+  .chartSection h2 {
+    font-size: 16px;
+  }
+
+  .filtroLoja {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

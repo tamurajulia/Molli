@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Clear+Sans&family=Montserrat:wght@600&display=swap');
+
+body {
+  background: transparent;
+  font-family: 'Clear Sans', sans-serif;
+}
+
+.cadastro-container {
+  display: flex;
+  width: 90%;
+  max-width: 950px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.lado-esquerdo {
+  flex: 1;
+  background-color: #e6efec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagem-lateral {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.lado-direito {
+  flex: 2;
+  padding: 30px 40px;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2e4d49;
+}
+
+.titulo-preto {
+  color: #2e4d49;
+}
+
+.titulo-verde {
+  color: #566363;
+}
+
+.iconeTitulo {
+  color: #2e4d49;
+}
+
+.linha {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 8px 0 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.campo input {
+  background-color: #f7f9f8;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #7a9690;
+  transition: box-shadow 0.2s ease;
+}
+
+.campo input::placeholder {
+  color: #a3b7b0;
+}
+
+.campo input:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(143, 170, 163, 0.6);
+}
+
+.linha-dupla {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.metade {
+  flex: 1;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #566363;
+}
+
+.botao {
+  background-color: #566363;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao:hover {
+  background-color: #7a9690;
+}
+
+@media (max-width: 768px) {
+  .cadastro-container {
+    flex-direction: column;
+  }
+
+  .lado-esquerdo {
+    padding: 30px;
+  }
+
+  .lado-direito {
+    padding: 25px;
+  }
+}

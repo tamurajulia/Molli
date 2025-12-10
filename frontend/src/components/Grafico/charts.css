@@ -1,0 +1,39 @@
+.chartsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .chartSection {
+    background-color: #f5f9f8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartSection h2 {
+    margin-bottom: 15px;
+    color: #566363;
+  }
+  
+  .heatmapLegend {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    color: #566363;
+  }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .legendColor {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+  
