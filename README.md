@@ -124,12 +124,12 @@ npm install
 npm start
 # Servidor em: http://localhost:3001
 3️⃣ Rodar o Front-end
-sh
-Copiar código
+```
 cd frontend
 npm install
 npm run dev
 # Aplicação em: http://localhost:3000
+
 👥 Autores
 Trabalho desenvolvido por:
 Eduarda Alves Pinho - N°08
@@ -138,7 +138,4 @@ Isabelli Lopes Montenegro - N°17
 Julia Tamura De Oliveira Silva - N°20
 Yasmin Alencar da Silva - N°32
 
-
-Bruno — Módulos de Estoque, Fornecedores, PDV e Segurança
-
-Projeto acadêmico — SENAI 2025
+Projeto integrador acadêmico — SENAI SCS 2025
