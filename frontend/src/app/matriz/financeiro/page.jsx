@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { FileText } from "lucide-react"; 
+import { FileText } from "lucide-react";
 
 import FinanceiroEntradasMatriz from "@/components/FinanceiroMatriz/FinanceiroEntradasMatriz/FinanceiroEntradasMatriz";
 import FinanceiroSaida from "@/components/FinanceiroMatriz/FinanceiroFuncionarioMatriz/FinanceiroSaídaMatriz/FinanceiroSaidaMatriz";
 import FinanceiroFornecedor from "@/components/FinanceiroMatriz/FinanceiroFornecedorMatriz/FinanceiroFornecedorMatriz";
 import FinanceiroFuncionarios from "@/components/FinanceiroMatriz/FinanceiroFuncionarioMatriz/FinanceiroFuncionariosMatriz";
 import FinanceiroFluxoCaixa from "@/components/FinanceiroMatriz/FinanceiroFluxoCaixaMatriz/FinanceiroFluxoCaixaMatriz";
-import ExportarRelatorios from "@/components/FinanceiroMatriz/RelatoriosMatriz/ExportarRelatorios"; 
+import ExportarRelatorios from "@/components/FinanceiroMatriz/RelatoriosMatriz/ExportarRelatorios";
 import Chart from "@/components/FinanceiroMatriz/ChartsMatriz/charts";
 import "./ModuleFinanceiroMatriz.css";
 
@@ -16,7 +16,7 @@ export default function Financeiro() {
 
   return (
     <>
-      <button 
+      <button
         onClick={() => setShowExportModal(true)}
         className="fixed bottom-8 right-8 z-50 bg-[#566363] text-white p-4 rounded-full shadow-lg hover:bg-[#465252] transition-all flex items-center gap-2 group"
         title="Exportar Relatórios"
@@ -30,26 +30,26 @@ export default function Financeiro() {
       <div className="FinanceiroInicial">
         <FinanceiroFluxoCaixa onExportClick={() => setShowExportModal(true)} />
       </div>
-      
+
       <Chart />
-      
+
       <div className="FinanceiroDivisao">
-        <FinanceiroEntradasMatriz  />
+        <FinanceiroEntradasMatriz />
       </div>
 
-      
 
-    
+
+
 
       <div className="FinanceiroDivisao">
         <FinanceiroFuncionarios />
       </div>
 
-<div className="FinanceiroDivisao">
+      <div className="FinanceiroDivisao">
         <FinanceiroSaida />
       </div>
 
-      
+
 
       {showExportModal && (
         <ExportarRelatorios onClose={() => setShowExportModal(false)} />

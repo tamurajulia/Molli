@@ -337,9 +337,7 @@ export default function Home() {
 
                       <div className="faq-answer">
                         <p>
-                          Aqui vai a resposta da pergunta. Substitua por seu
-                          texto real. Esse texto aparece quando o item está
-                          aberto.
+                      Nossas lojas funcionam de segunda a sábado, das 9h às 18h. Os horários podem variar de acordo com a filial.
                         </p>
                       </div>
                     </div>
